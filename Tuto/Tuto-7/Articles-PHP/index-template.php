@@ -86,9 +86,9 @@
                     <a href="public-article.html" class="carte-image">
                         <img src="images/<?= htmlspecialchars($carte['image']) ?>" alt="Code source affiché sur un écran">
                     </a>
-                    <span class="etiquette-categorie bleu">Développement</span>
+                    <span class="etiquette-categorie bleu"><?= htmlspecialchars($article['categorie_libelle']) ?></span>
                     <div class="carte-contenu">
-                        <h3><a href="public-article.html">Comment bien débuter avec Tailwind CSS en 2026 ?</a></h3>
+                        <h3><a href="article.php?id=<?= $article['id'] ?>"><?= htmlspecialchars($article['titre']) ?></a></h3>
                         <p>Découvrez les concepts fondamentaux de Tailwind CSS et pourquoi cette approche utilitaire est
                             devenue le standard de l'industrie.<?php echo mb_substr($texte, 0, 30)?></p>
                         <div class="carte-meta">
